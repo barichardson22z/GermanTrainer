@@ -1,24 +1,48 @@
 package com.nolos.germantrainer.screens
 
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AddCircle
-import androidx.compose.material.icons.filled.Build
-import androidx.compose.material.icons.filled.Create
-import androidx.compose.material.icons.filled.Done
-import androidx.compose.material.icons.filled.Star
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavHostController
+import com.nolos.germantrainer.TrainingScreens
+
 
 @Composable
-fun TrainingScreen() {
+fun TrainingScreen(navController: NavHostController) {
     Text(text = "Training")
-}
+    LazyRow() {
+        TrainingScreens.values().forEach { screen ->
+            item {
+                IconButton(
+                    onClick = {
+                        navController.navigate(screen.route) {
+                            // Pop up to the start destination of the graph to
+                            // avoid building up a large stack of destinations
+                            // on the back stack as users select items
+                            navController.graph.startDestinationRoute?.let { route ->
+                                popUpTo(route) {
+                                    saveState = true
+                                }
+                            }
+                            launchSingleTop = true
+                            restoreState = true
+                        }
+                    }, modifier = Modifier.fillMaxSize()
+                ) {
+                    Icon(
+                        painterResource(id = screen.drawableId),
+                        contentDescription = stringResource(id = screen.stringId)
+                    )
+                }
+            }
+        }
 
-enum class TrainingOptions(val title: String, val desc: String, val icon: ImageVector) {
-    MENU_VOCAB("Vocab", "Practice Vocabulary", Icons.Default.Star),
-    MENU_CONJUGATION("Conjugation", "Practice Conjugation of Regular and Irregular Verbs", Icons.Default.Build),
-    MENU_SENTENCES("Structure", "Practice Sentence Structure", Icons.Default.AddCircle),
-    MENU_PHRASES("Phrases", "Practice Some Common German Phrases", Icons.Default.Create),
-    MENU_IDIOMS("Idioms", "Practice Some Common German Idioms", Icons.Default.Done),
+    }
+
 }

@@ -7,4 +7,6 @@
     <string name="nav_training_label">Train</string>
     <string name="nav_games_label">Games</string>
     <string name="nav_settings_label">Settings</string>
+    <string name="nav_vocab_label">Conjugation</string>
+    <string name="nav_conj_label">Conjugation</string>
 </resources>
