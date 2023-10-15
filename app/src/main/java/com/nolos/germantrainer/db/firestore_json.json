@@ -1,0 +1,74 @@
+{
+  "vocab": {
+    "categories": {
+      "familyAndFriends": "Family and Friends",
+      "householdObjects": "Household Objects",
+      "transportation": "Transportation",
+      "food": "Food",
+      "clothing": "Clothing",
+      "personalBelongings": "Personal Belongings"
+    },
+    "nouns": {
+      "familyAndFriends": {
+        "mother": {
+          "article": "die",
+          "german": "Mutter"
+        },
+        "father": {
+          "article": "der",
+          "german": "Vater"
+        }
+      },
+      "householdObjects": {
+        "house": {
+          "article": "das",
+          "german": "Haus"
+        },
+        "bed": {
+          "article": "das",
+          "german": "Bett"
+        }
+      },
+      "transportation": {
+        "car": {
+          "article": "das",
+          "german": "Auto"
+        },
+        "bus": {
+          "article": "der",
+          "german": "Bus"
+        }
+      },
+      "food": {
+        "breakfast": {
+          "article": "das",
+          "german": "Frühstuck"
+        },
+        "dinner": {
+          "article": "das",
+          "german": "Abendessen"
+        }
+      },
+      "clothing": {
+        "shirt": {
+          "article": "das",
+          "german": "Hemd"
+        },
+        "pants": {
+          "article": "die",
+          "german": "Hose"
+        }
+      },
+      "personalBelongings": {
+        "purse": {
+          "article": "der",
+          "german": "Geldbeutel"
+        },
+        "cell phone": {
+          "article": "das",
+          "german": "Handy"
+        }
+      }
+    }
+  }
+}

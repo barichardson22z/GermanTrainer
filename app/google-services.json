@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "592731369860",
+    "project_id": "germantrainer-75341",
+    "storage_bucket": "germantrainer-75341.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592731369860:android:38de4ac185996af5c7edd1",
+        "android_client_info": {
+          "package_name": "com.nolos.germantrainer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi3G56R1yFXX7OAWcEyvYxxd6VhxFP20I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

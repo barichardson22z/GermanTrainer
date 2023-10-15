@@ -4,17 +4,11 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Settings
-import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -28,7 +22,6 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -38,8 +31,10 @@ import androidx.navigation.compose.rememberNavController
 import com.nolos.germantrainer.screens.ConjugationScreen
 import com.nolos.germantrainer.screens.GamesScreen
 import com.nolos.germantrainer.screens.HomeScreen
+import com.nolos.germantrainer.screens.NavScreens
 import com.nolos.germantrainer.screens.SettingsScreen
 import com.nolos.germantrainer.screens.TrainingScreen
+import com.nolos.germantrainer.screens.TrainingScreens
 import com.nolos.germantrainer.screens.VocabScreen
 import com.nolos.germantrainer.ui.theme.GermanTrainerTheme
 
@@ -98,7 +93,7 @@ private fun GermanTrainerBottomBar(
             NavigationBarItem(
                 icon = {
                     Icon(
-                        imageVector = navScreens?.icon ?: Icons.Filled.Check,
+                        imageVector = navScreens.icon,
                         contentDescription = screenLabel
                     )
                 },
@@ -151,22 +146,4 @@ fun Navigation(navController: NavHostController) {
     }
 }
 
-enum class NavScreens(
-    val route: String,
-    @StringRes val stringId: Int,
-    val icon: ImageVector
-) {
-    HOME("home", R.string.nav_home_label, icon = Icons.Filled.Home),
-    TRAINING("training", R.string.nav_training_label, icon = Icons.Filled.Star),
-    GAMES("games", R.string.nav_games_label, icon = Icons.Filled.CheckCircle),
-    SETTINGS("settings", R.string.nav_settings_label, Icons.Filled.Settings)
-}
 
-enum class TrainingScreens(
-    val route: String,
-    @StringRes val stringId: Int,
-    @DrawableRes val drawableId: Int
-) {
-    VOCAB("training/vocab", R.string.nav_vocab_label, R.drawable.ic_lrusv),
-    CONJUGATION("training/conjugation", R.string.nav_conj_label, R.drawable.ic_lrusv)
-}
