@@ -7,8 +7,6 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -35,7 +33,7 @@ import com.nolos.germantrainer.screens.NavScreens
 import com.nolos.germantrainer.screens.SettingsScreen
 import com.nolos.germantrainer.screens.TrainingScreen
 import com.nolos.germantrainer.screens.TrainingScreens
-import com.nolos.germantrainer.screens.VocabScreen
+import com.nolos.germantrainer.screens.vocab.VocabScreen
 import com.nolos.germantrainer.ui.theme.GermanTrainerTheme
 
 @OptIn(ExperimentalMaterial3Api::class)

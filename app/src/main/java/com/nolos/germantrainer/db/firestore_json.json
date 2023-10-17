@@ -1,74 +1,87 @@
 {
   "vocab": {
-    "categories": {
-      "familyAndFriends": "Family and Friends",
-      "householdObjects": "Household Objects",
-      "transportation": "Transportation",
-      "food": "Food",
-      "clothing": "Clothing",
-      "personalBelongings": "Personal Belongings"
-    },
-    "nouns": {
-      "familyAndFriends": {
-        "mother": {
-          "article": "die",
-          "german": "Mutter"
-        },
-        "father": {
-          "article": "der",
-          "german": "Vater"
-        }
+    "categories": [
+      "Family and Friends",
+      "Household Objects",
+      "Transportation",
+      "Food",
+      "Clothing",
+      "Personal Belongings"
+    ],
+
+    "nouns": [
+      {
+        "english": "mother",
+        "article": "die",
+        "german": "Mutter",
+        "categories": ["Family and Friends"]
       },
-      "householdObjects": {
-        "house": {
-          "article": "das",
-          "german": "Haus"
-        },
-        "bed": {
-          "article": "das",
-          "german": "Bett"
-        }
+      {
+        "english": "father",
+        "article": "der",
+        "german": "Vater",
+        "categories": ["Family and Friends"]
       },
-      "transportation": {
-        "car": {
-          "article": "das",
-          "german": "Auto"
-        },
-        "bus": {
-          "article": "der",
-          "german": "Bus"
-        }
+      {
+        "english": "house",
+        "article": "das",
+        "german": "Haus",
+        "categories": ["Household Objects"]
       },
-      "food": {
-        "breakfast": {
-          "article": "das",
-          "german": "Frühstuck"
-        },
-        "dinner": {
-          "article": "das",
-          "german": "Abendessen"
-        }
+      {
+        "english": "bed",
+        "article": "das",
+        "german": "Bett",
+        "categories": ["Household Objects"]
       },
-      "clothing": {
-        "shirt": {
-          "article": "das",
-          "german": "Hemd"
-        },
-        "pants": {
-          "article": "die",
-          "german": "Hose"
-        }
+      {
+        "english": "car",
+        "article": "das",
+        "german": "Auto",
+        "categories": ["Transportation"]
       },
-      "personalBelongings": {
-        "purse": {
-          "article": "der",
-          "german": "Geldbeutel"
-        },
-        "cell phone": {
-          "article": "das",
-          "german": "Handy"
-        }
+      {
+        "english": "bus",
+        "article": "der",
+        "german": "Bus",
+        "categories": ["Transportation"]
+      },
+      {
+        "english": "breakfast",
+        "article": "das",
+        "german": "Frühstuck",
+        "categories": ["Food"]
+      },
+      {
+        "english": "dinner",
+        "article": "das",
+        "german": "Abendessen",
+        "categories": ["Food"]
+      },
+      {
+        "english": "shirt",
+        "article": "das",
+        "german": "Hemd",
+        "categories": ["Clothing"]
+      },
+      {
+        "english": "pants",
+        "article": "die",
+        "german": "Hose",
+        "categories": ["Clothing"]
+      },
+      {
+        "english": "purse",
+        "article": "der",
+        "german": "Geldbeutel",
+        "categories": ["Personal Belongings"]
+      },
+      {
+        "english": "cell phone",
+        "article": "das",
+        "german": "Handy",
+        "categories": ["Personal Belongings"]
       }
-    }
+    ]
   }
 }

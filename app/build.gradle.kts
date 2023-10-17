@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.nolos.germantrainer"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.nolos.germantrainer"
@@ -61,6 +61,7 @@ dependencies {
     implementation("com.google.android.material:material:1.8.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-compose:2.5.3")
+    implementation("androidx.compose.material:material-icons-extended:1.5.3")
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation("com.google.firebase:firebase-database-ktx")
