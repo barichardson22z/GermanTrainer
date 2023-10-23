@@ -20,6 +20,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -34,16 +35,23 @@ import com.nolos.germantrainer.screens.SettingsScreen
 import com.nolos.germantrainer.screens.TrainingScreen
 import com.nolos.germantrainer.screens.TrainingScreens
 import com.nolos.germantrainer.screens.vocab.VocabScreen
+import com.nolos.germantrainer.speech.ISpeechProvider
+import com.nolos.germantrainer.speech.SpeechProvider
 import com.nolos.germantrainer.ui.theme.GermanTrainerTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 class MainActivity : ComponentActivity() {
+
+    private lateinit var speech: ISpeechProvider
 
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             GermanTrainerTheme {
+
+                speech = SpeechProvider(androidx.compose.ui.platform.LocalContext.current)
+
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -64,7 +72,7 @@ class MainActivity : ComponentActivity() {
                         }
                     ) { padding ->
                         Box(modifier = Modifier.padding(padding)) {
-                            Navigation(navController = navController)
+                            Navigation(navController = navController, speech = speech)
                         }
                     }
                 }
@@ -74,13 +82,10 @@ class MainActivity : ComponentActivity() {
 }
 
 
-
 @Composable
 private fun GermanTrainerBottomBar(
     navController: NavHostController
 ) {
-
-
     NavigationBar() {
         NavScreens.values().forEach { navScreens ->
 
@@ -118,7 +123,10 @@ private fun GermanTrainerBottomBar(
 }
 
 @Composable
-fun Navigation(navController: NavHostController) {
+fun Navigation(
+    navController: NavHostController,
+    speech: ISpeechProvider
+) {
     NavHost(navController = navController, startDestination = NavScreens.HOME.route) {
         composable(route = NavScreens.HOME.route) {
             HomeScreen()
@@ -136,7 +144,7 @@ fun Navigation(navController: NavHostController) {
             SettingsScreen()
         }
         composable(route = TrainingScreens.VOCAB.route) {
-            VocabScreen()
+            VocabScreen(speech)
         }
         composable(route = TrainingScreens.CONJUGATION.route) {
             ConjugationScreen()

@@ -23,6 +23,90 @@
         "categories": ["Family and Friends"]
       },
       {
+        "english": "sister",
+        "article": "die",
+        "german": "Schwester",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "brother",
+        "article": "der",
+        "german": "Bruder",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "child",
+        "article": "das",
+        "german": "Kind",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "aunt",
+        "article": "die",
+        "german": "Tante",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "grandmother",
+        "article": "die",
+        "german": "Groβmutter / Oma",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "grandfather",
+        "article": "der",
+        "german": "Groβvater / Opa",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "cousin (m.)",
+        "article": "der",
+        "german": "Cousin",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "cousin (f.)",
+        "article": "die",
+        "german": "Cousine",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "friend (m.)",
+        "article": "der",
+        "german": "Fruend",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "friend (f.)",
+        "article": "die",
+        "german": "Freundin",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "husband",
+        "article": "der",
+        "german": "Mann",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "wife",
+        "article": "die",
+        "german": "Frau",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "colleague (m.)",
+        "article": "der",
+        "german": "Kollege",
+        "categories": ["Family and Friends"]
+      },
+      {
+        "english": "colleague (f.)",
+        "article": "die",
+        "german": "Kollegin",
+        "categories": ["Family and Friends"]
+      },
+      {
         "english": "house",
         "article": "das",
         "german": "Haus",
@@ -32,6 +116,162 @@
         "english": "bed",
         "article": "das",
         "german": "Bett",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "table",
+        "article": "der",
+        "german": "Tisch",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "door",
+        "article": "die",
+        "german": ": Tür",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "pillow/cushion",
+        "article": "das",
+        "german": "Kissen",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "window",
+        "article": "das",
+        "german": "Fenster",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "wall",
+        "article": "die",
+        "german": "Wand",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "floor",
+        "article": "der",
+        "german": "Boden",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "room",
+        "article": "das",
+        "german": "Zimmer",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "bedroom",
+        "article": "das",
+        "german": "Schlafzimmer",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "bathroom",
+        "article": "das",
+        "german": "Badezimmer",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "kitchen",
+        "article": "die",
+        "german": "Küche",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "living room",
+        "article": "die",
+        "german": "Wohnung",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "basement",
+        "article": "der",
+        "german": "Keller",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "couch",
+        "article": "die",
+        "german": "Couch",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "chair",
+        "article": "der",
+        "german": "Stuhl",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "sink",
+        "article": "das",
+        "german": "Waschbecken",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "toilet",
+        "article": "die",
+        "german": "Toilette",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "bathtub",
+        "article": "die",
+        "german": "Badewanne",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "bath",
+        "article": "das",
+        "german": "Bad",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "shower",
+        "article": "die",
+        "german": "Dusche",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "lamp",
+        "article": "die",
+        "german": "Lampe",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "trash",
+        "article": "der",
+        "german": "Müll",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "refrigerator",
+        "article": "der",
+        "german": "Kühlschrank",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "stove",
+        "article": "der",
+        "german": "Herd",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "microwave",
+        "article": "der",
+        "german": "Mikrowellenherd",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "dishwasher",
+        "article": "die",
+        "german": "Geschirrspülmaschine",
+        "categories": ["Household Objects"]
+      },
+      {
+        "english": "cabinet",
+        "article": "das",
+        "german": "Kabinett",
         "categories": ["Household Objects"]
       },
       {

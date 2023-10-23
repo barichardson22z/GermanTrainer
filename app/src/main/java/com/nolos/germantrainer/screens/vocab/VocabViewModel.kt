@@ -6,16 +6,23 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshots.SnapshotStateList
+import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.initializer
+import androidx.lifecycle.viewmodel.viewModelFactory
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
+import com.nolos.germantrainer.R
+import com.nolos.germantrainer.speech.ISpeechProvider
+import java.util.Locale
 import kotlin.random.Random
 
-class VocabViewModel : ViewModel() {
+class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
 
     var filtersExpanded by mutableStateOf(false)
         private set
@@ -75,6 +82,12 @@ class VocabViewModel : ViewModel() {
         })
     }
 
+    class Factory(private val speechProvider: ISpeechProvider) : ViewModelProvider.Factory {
+        override fun <T : ViewModel> create(modelClass: Class<T>): T {
+            return VocabViewModel(speechProvider) as T
+        }
+    }
+
     fun toggleFilters() {
         filtersExpanded = !filtersExpanded
     }
@@ -88,12 +101,11 @@ class VocabViewModel : ViewModel() {
         val currentWord =
             if (filteredWords.isNotEmpty()) filteredWords[Random.nextInt(filteredWords.size)] else null
 
-        if(currentWord != null) {
+        if (currentWord != null) {
             currentEnglishWord = currentWord.english
             currentGermanArticle = currentWord.article
             currentGermanWord = currentWord.german
-        }
-        else {
+        } else {
             currentEnglishWord = ""
             currentGermanArticle = ""
             currentGermanWord = ""
@@ -102,6 +114,11 @@ class VocabViewModel : ViewModel() {
 
     fun revealWord() {
         germanWordShown = true
+    }
+
+    fun speakWord() {
+        speech.setLanguage(if (germanWordShown) Locale.GERMAN else Locale.US)
+        speech.speak(if (germanWordShown) "$currentGermanArticle $currentGermanWord" else "the $currentEnglishWord")
     }
 
 }

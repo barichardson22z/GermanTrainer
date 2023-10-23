@@ -12,5 +12,6 @@
     <string name="categories">Categories</string>
     <string name="show_filters">Show Filters</string>
     <string name="next_word">Next Word</string>
-    <string name="generic_word">der/die/das ??????</string>
+    <string name="reveal_word">Reveal Word</string>
+    <string name="listen_word">Listen to Word</string>
 </resources>
