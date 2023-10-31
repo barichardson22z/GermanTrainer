@@ -6,321 +6,677 @@
       "Transportation",
       "Food",
       "Clothing",
-      "Personal Belongings"
+      "Personal Belongings",
+      "General"
     ],
-
     "nouns": [
       {
         "english": "mother",
         "article": "die",
         "german": "Mutter",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "father",
         "article": "der",
         "german": "Vater",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "sister",
         "article": "die",
         "german": "Schwester",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "brother",
         "article": "der",
         "german": "Bruder",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "child",
         "article": "das",
         "german": "Kind",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "aunt",
         "article": "die",
         "german": "Tante",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "grandmother",
         "article": "die",
-        "german": "Groβmutter / Oma",
-        "categories": ["Family and Friends"]
+        "german": "Großmutter / Oma",
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "grandfather",
         "article": "der",
-        "german": "Groβvater / Opa",
-        "categories": ["Family and Friends"]
+        "german": "Großvater / Opa",
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "cousin (m.)",
         "article": "der",
         "german": "Cousin",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "cousin (f.)",
         "article": "die",
         "german": "Cousine",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "friend (m.)",
         "article": "der",
         "german": "Fruend",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "friend (f.)",
         "article": "die",
         "german": "Freundin",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "husband",
         "article": "der",
         "german": "Mann",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "wife",
         "article": "die",
         "german": "Frau",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "colleague (m.)",
         "article": "der",
         "german": "Kollege",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "colleague (f.)",
         "article": "die",
         "german": "Kollegin",
-        "categories": ["Family and Friends"]
+        "categories": [
+          "Family and Friends"
+        ]
       },
       {
         "english": "house",
         "article": "das",
         "german": "Haus",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "bed",
         "article": "das",
         "german": "Bett",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "table",
         "article": "der",
         "german": "Tisch",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "door",
         "article": "die",
-        "german": ": Tür",
-        "categories": ["Household Objects"]
+        "german": "Tür",
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "pillow/cushion",
         "article": "das",
         "german": "Kissen",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "window",
         "article": "das",
         "german": "Fenster",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "wall",
         "article": "die",
         "german": "Wand",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "floor",
         "article": "der",
         "german": "Boden",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "room",
         "article": "das",
         "german": "Zimmer",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "bedroom",
         "article": "das",
         "german": "Schlafzimmer",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "bathroom",
         "article": "das",
         "german": "Badezimmer",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "kitchen",
         "article": "die",
         "german": "Küche",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "living room",
         "article": "die",
         "german": "Wohnung",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "basement",
         "article": "der",
         "german": "Keller",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "couch",
         "article": "die",
         "german": "Couch",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "chair",
         "article": "der",
         "german": "Stuhl",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "sink",
         "article": "das",
         "german": "Waschbecken",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "toilet",
         "article": "die",
         "german": "Toilette",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "bathtub",
         "article": "die",
         "german": "Badewanne",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "bath",
         "article": "das",
         "german": "Bad",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "shower",
         "article": "die",
         "german": "Dusche",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "lamp",
         "article": "die",
         "german": "Lampe",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "trash",
         "article": "der",
         "german": "Müll",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "refrigerator",
         "article": "der",
         "german": "Kühlschrank",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "stove",
         "article": "der",
         "german": "Herd",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "microwave",
         "article": "der",
         "german": "Mikrowellenherd",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "dishwasher",
         "article": "die",
         "german": "Geschirrspülmaschine",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "cabinet",
         "article": "das",
         "german": "Kabinett",
-        "categories": ["Household Objects"]
+        "categories": [
+          "Household Objects"
+        ]
       },
       {
         "english": "car",
         "article": "das",
         "german": "Auto",
-        "categories": ["Transportation"]
+        "categories": [
+          "Transportation"
+        ]
       },
       {
         "english": "bus",
         "article": "der",
         "german": "Bus",
-        "categories": ["Transportation"]
+        "categories": [
+          "Transportation"
+        ]
       },
       {
         "english": "breakfast",
         "article": "das",
         "german": "Frühstuck",
-        "categories": ["Food"]
+        "categories": [
+          "Food"
+        ]
       },
       {
         "english": "dinner",
         "article": "das",
         "german": "Abendessen",
-        "categories": ["Food"]
+        "categories": [
+          "Food"
+        ]
       },
       {
         "english": "shirt",
         "article": "das",
         "german": "Hemd",
-        "categories": ["Clothing"]
+        "categories": [
+          "Clothing"
+        ]
       },
       {
         "english": "pants",
         "article": "die",
         "german": "Hose",
-        "categories": ["Clothing"]
+        "categories": [
+          "Clothing"
+        ]
       },
       {
         "english": "purse",
         "article": "der",
         "german": "Geldbeutel",
-        "categories": ["Personal Belongings"]
+        "categories": [
+          "Personal Belongings"
+        ]
       },
       {
         "english": "cell phone",
         "article": "das",
         "german": "Handy",
-        "categories": ["Personal Belongings"]
+        "categories": [
+          "Personal Belongings"
+        ]
+      }
+    ],
+    "verbs": [
+      {
+        "english": "to let",
+        "german": "lassen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to go",
+        "german": "gehen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to be",
+        "german": "sein",
+        "categories": ["General"]
+      },
+      {
+        "english": "to drive, to ride, to go by vehicle",
+        "german": "fahren",
+        "categories": ["General"]
+      },
+      {
+        "english": "to become, will",
+        "german": "werden",
+        "categories": ["General"]
+      },
+      {
+        "english": "to speak",
+        "german": "sprechen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to come",
+        "german": "kommen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to want",
+        "german": "wollen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to eat",
+        "german": "essen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to forget",
+        "german": "vergessen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to break",
+        "german": "brechen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to help",
+        "german": "helfen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to sleep",
+        "german": "schlafen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to see",
+        "german": "sehen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to learn",
+        "german": "lernen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to stay, to remain",
+        "german": "bleiben",
+        "categories": ["General"]
+      },
+      {
+        "english": "to find",
+        "german": "finden",
+        "categories": ["General"]
+      },
+      {
+        "english": "to drink",
+        "german": "trinken",
+        "categories": ["General"]
+      },
+      {
+        "english": "to understand",
+        "german": "verstehen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to love",
+        "german": "lieben",
+        "categories": ["General"]
+      },
+      {
+        "english": "to wait",
+        "german": "warten",
+        "categories": ["General"]
+      },
+      {
+        "english": "to believe, to think",
+        "german": "glauben",
+        "categories": ["General"]
+      },
+      {
+        "english": "to say, to tell",
+        "german": "sagen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to live",
+        "german": "leben",
+        "categories": ["General"]
+      },
+      {
+        "english": "to work",
+        "german": "arbeiten",
+        "categories": ["General"]
+      },
+      {
+        "english": "to make, to do",
+        "german": "machen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to fly",
+        "german": "fliegen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to need",
+        "german": "brauchen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to fly",
+        "german": "fliegen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to be able to, can",
+        "german": "können",
+        "categories": ["General"]
+      },
+      {
+        "english": "to be allowed to, may",
+        "german": "dürfen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to want, would like",
+        "german": "möchten",
+        "categories": ["General"]
+      },
+      {
+        "english": "to have to, must",
+        "german": "müssen",
+        "categories": ["General"]
+      },
+      {
+        "english": "should",
+        "german": "sollen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to want",
+        "german": "wollen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to get, to receive",
+        "german": "bekommen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to smoke",
+        "german": "rauchen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to sing",
+        "german": "singen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to buy",
+        "german": "kaufen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to know (someone)",
+        "german": "kennen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to swim",
+        "german": "schwimmen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to visit, to attend",
+        "german": "besuchen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to rain",
+        "german": "regnen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to travel",
+        "german": "reisen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to happen",
+        "german": "passieren",
+        "categories": ["General"]
+      },
+      {
+        "english": "to ask, to question",
+        "german": "fragen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to teach",
+        "german": "lehren",
+        "categories": ["General"]
+      },
+      {
+        "english": "to start, to begin",
+        "german": "beginnen",
+        "categories": ["General"]
+      },
+      {
+        "english": "to write",
+        "german": "schreiben",
+        "categories": ["General"]
+      },
+      {
+        "english": "to have",
+        "german": "haben",
+        "categories": ["General"]
       }
     ]
   }

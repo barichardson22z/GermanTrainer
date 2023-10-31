@@ -6,30 +6,34 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshots.SnapshotStateList
-import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.viewmodel.initializer
-import androidx.lifecycle.viewmodel.viewModelFactory
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
-import com.nolos.germantrainer.R
 import com.nolos.germantrainer.speech.ISpeechProvider
 import java.util.Locale
 import kotlin.random.Random
 
 class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
 
-    var filtersExpanded by mutableStateOf(false)
+    var categoryFiltersExpanded by mutableStateOf(false)
         private set
 
     var categories: SnapshotStateList<String> = mutableStateListOf()
     var selectedCategories: SnapshotStateList<String> = mutableStateListOf()
-    var nouns: SnapshotStateList<Noun> = mutableStateListOf()
+
+    var typeFiltersExpanded by mutableStateOf(false)
+        private set
+
+    var types: SnapshotStateList<String> = mutableStateListOf("Noun", "Verb")
+    var selectedTypes: SnapshotStateList<String> = mutableStateListOf("Noun", "Verb")
+
+
+    var words: SnapshotStateList<IWord> = mutableStateListOf()
 
     var currentEnglishWord by mutableStateOf("")
         private set
@@ -70,7 +74,25 @@ class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
                 val nounsArrayList = snapshot.getValue<ArrayList<Noun>>()
                 if (nounsArrayList != null) {
                     for (noun in nounsArrayList) {
-                        nouns.add(noun)
+                        words.add(noun)
+                    }
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.e("VocabViewModel", error.toString())
+            }
+
+        })
+
+        val vocabVerbsQuery = database.child("vocab").child("verbs")
+        vocabVerbsQuery.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                @Suppress("UNCHECKED_CAST")
+                val verbsArrayList = snapshot.getValue<ArrayList<Verb>>()
+                if (verbsArrayList != null) {
+                    for (verb in verbsArrayList) {
+                        words.add(verb)
                     }
                 }
             }
@@ -88,23 +110,29 @@ class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
         }
     }
 
-    fun toggleFilters() {
-        filtersExpanded = !filtersExpanded
+    fun toggleCategoryFilters() {
+        categoryFiltersExpanded = !categoryFiltersExpanded
+    }
+
+    fun toggleTypeFilters() {
+        typeFiltersExpanded = !typeFiltersExpanded
     }
 
     fun nextWord() {
         germanWordShown = false
 
         var filteredWords =
-            nouns.filter { noun -> noun.categories.any { cat -> selectedCategories.contains(cat) } }
+            words.filter { word -> word.categories.any { cat -> selectedCategories.contains(cat) } }
+                .filter { word -> (selectedTypes.contains("Noun") && word is Noun) || (selectedTypes.contains("Verb") && word is Verb) }
 
         val currentWord =
             if (filteredWords.isNotEmpty()) filteredWords[Random.nextInt(filteredWords.size)] else null
 
         if (currentWord != null) {
             currentEnglishWord = currentWord.english
-            currentGermanArticle = currentWord.article
             currentGermanWord = currentWord.german
+            currentGermanArticle = if (currentWord is Noun) currentWord.article else ""
+
         } else {
             currentEnglishWord = ""
             currentGermanArticle = ""
@@ -114,6 +142,7 @@ class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
 
     fun revealWord() {
         germanWordShown = true
+        speakWord()
     }
 
     fun speakWord() {

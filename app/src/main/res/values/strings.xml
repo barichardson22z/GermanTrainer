@@ -10,7 +10,9 @@
     <string name="nav_vocab_label">Vocab</string>
     <string name="nav_conj_label">Conj</string>
     <string name="categories">Categories</string>
-    <string name="show_filters">Show Filters</string>
+    <string name="show_category_filters">Show Category Filters</string>
+    <string name="types">Types</string>
+    <string name="show_type_filters">Show Type Filters</string>
     <string name="next_word">Next Word</string>
     <string name="reveal_word">Reveal Word</string>
     <string name="listen_word">Listen to Word</string>

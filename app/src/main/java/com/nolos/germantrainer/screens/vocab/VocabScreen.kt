@@ -50,17 +50,35 @@ fun VocabScreen(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(text = stringResource(id = R.string.categories))
-            IconButton(onClick = { vocabViewModel.toggleFilters() }) {
+            IconButton(onClick = { vocabViewModel.toggleCategoryFilters() }) {
                 Icon(
-                    if (vocabViewModel.filtersExpanded) Icons.Default.FilterListOff else Icons.Default.FilterList,
-                    contentDescription = stringResource(id = R.string.show_filters)
+                    if (vocabViewModel.categoryFiltersExpanded) Icons.Default.FilterListOff else Icons.Default.FilterList,
+                    contentDescription = stringResource(id = R.string.show_category_filters)
                 )
             }
         }
-
-        AnimatedVisibility(visible = vocabViewModel.filtersExpanded) {
-            FilterOptions(vocabViewModel)
+        AnimatedVisibility(visible = vocabViewModel.categoryFiltersExpanded) {
+            CategoryFilterOptions(vocabViewModel)
         }
+        Row(
+            modifier = Modifier
+                .padding(8.dp)
+                .fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(text = stringResource(id = R.string.types))
+            IconButton(onClick = { vocabViewModel.toggleTypeFilters() }) {
+                Icon(
+                    if (vocabViewModel.typeFiltersExpanded) Icons.Default.FilterListOff else Icons.Default.FilterList,
+                    contentDescription = stringResource(id = R.string.show_type_filters)
+                )
+            }
+        }
+        AnimatedVisibility(visible = vocabViewModel.typeFiltersExpanded) {
+            TypeFilterOptions(vocabViewModel)
+        }
+
+
 
         WordPanel(vocabViewModel)
     }
@@ -69,7 +87,7 @@ fun VocabScreen(
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
-fun FilterOptions(vocabViewModel: VocabViewModel) {
+fun CategoryFilterOptions(vocabViewModel: VocabViewModel) {
     FlowRow(modifier = Modifier.padding(8.dp)) {
         vocabViewModel.categories.forEach { category ->
             FilterChip(
@@ -86,7 +104,27 @@ fun FilterOptions(vocabViewModel: VocabViewModel) {
                 })
         }
     }
+}
 
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@Composable
+fun TypeFilterOptions(vocabViewModel: VocabViewModel) {
+    FlowRow(modifier = Modifier.padding(8.dp)) {
+        vocabViewModel.types.forEach { type ->
+            FilterChip(
+                selected = vocabViewModel.selectedTypes.contains(type),
+                onClick = {
+                    if (vocabViewModel.selectedTypes.contains(type))
+                        vocabViewModel.selectedTypes.remove(type)
+                    else
+                        vocabViewModel.selectedTypes.add(type)
+
+                },
+                label = {
+                    Text(text = type)
+                })
+        }
+    }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -111,7 +149,10 @@ fun WordPanel(vocabViewModel: VocabViewModel) {
                 modifier = Modifier.fillMaxWidth(),
             ) {
                 Row(
-                    modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(25.dp),
+                    horizontalArrangement = Arrangement.Center
                 ) {
                     if (vocabViewModel.germanWordShown) {
                         if (vocabViewModel.currentGermanArticle.isNotEmpty()) {
