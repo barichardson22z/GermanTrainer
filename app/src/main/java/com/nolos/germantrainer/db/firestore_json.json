@@ -7,9 +7,287 @@
       "Food",
       "Clothing",
       "Personal Belongings",
-      "General"
+      "General",
+      "MTG",
+      "Colors"
     ],
     "nouns": [
+      {
+        "english": "mark, brand, counter (MTG)",
+        "article": "die",
+        "german": "Marke",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "opponent",
+        "article": "der",
+        "german": "Gegner",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "color",
+        "article": "die",
+        "german": "Farbe",
+        "categories": [
+          "MTG",
+          "Colors"
+        ]
+      },
+      {
+        "english": "graveyard / cemetary",
+        "article": "der",
+        "german": "Friedhof",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "player",
+        "article": "der",
+        "german": "Spieler",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "choice",
+        "article": "die",
+        "german": "Wahl",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "power of resistance, toughness (MTG)",
+        "article": "die",
+        "german": "Widerstandskraft",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "resistance",
+        "article": "die",
+        "german": "Widerstand",
+        "categories": [
+          "MTG",
+          "General"
+        ]
+      },
+      {
+        "english": "strength",
+        "article": "die",
+        "german": "Stärke",
+        "categories": [
+          "MTG",
+          "General"
+        ]
+      },
+      {
+        "english": "game piece, token",
+        "article": "der",
+        "german": "Spielstein",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "creature spell",
+        "article": "der",
+        "german": "Kreaturenzuber",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "magic spell",
+        "article": "der",
+        "german": "Zauberspruch",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "card",
+        "article": "die",
+        "german": "Karte",
+        "categories": [
+          "MTG",
+          "General"
+        ]
+      },
+      {
+        "english": "swamp",
+        "article": "der",
+        "german": "Sumpf",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "mountain range",
+        "article": "die",
+        "german": "Gebirge",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "plain",
+        "article": "die",
+        "german": "Insel",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "plain",
+        "article": "der",
+        "german": "Wald",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "island",
+        "article": "die",
+        "german": "Insel",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "plain",
+        "article": "die",
+        "german": "Ebene",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "end step",
+        "article": "das",
+        "german": "Endsegment",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "fight",
+        "article": "der",
+        "german": "Kampf",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "upkeep/supply step",
+        "article": "das",
+        "german": "Versorgungssegment",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "untap step",
+        "article": "das",
+        "german": "Enttappsegments",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "bonus (kicker)",
+        "article": "der",
+        "german": "Bonus",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "clairvoyance (scry)",
+        "article": "die",
+        "german": "Hellsicht",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "lifelink",
+        "article": "die",
+        "german": "Lebensverknüpfung",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "damage",
+        "article": "der",
+        "german": "Schaden",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "deathtouch",
+        "article": "die",
+        "german": "Todesberührung",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "double-strike",
+        "article": "der",
+        "german": "Doppelschlag",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "reach / range",
+        "article": "die",
+        "german": "Reichweite",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "defender",
+        "article": "der",
+        "german": "Verteidiger",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "haste",
+        "article": "die",
+        "german": "Eile",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "ability to fly",
+        "article": "die",
+        "german": "Flugfähigkeit",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "vigilance",
+        "article": "die",
+        "german": "Wachsamkeit",
+        "categories": [
+          "MTG"
+        ]
+      },
       {
         "english": "mother",
         "article": "die",
@@ -425,258 +703,770 @@
         "categories": [
           "Personal Belongings"
         ]
+      },
+      {
+        "english": "creature",
+        "article": "die",
+        "german": "Kreatur",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "basic land",
+        "article": "das",
+        "german": "Standardland",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "sorcery / witchcraft",
+        "article": "die",
+        "german": "Hexerei",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "enchantment",
+        "article": "die",
+        "german": "Verzauberung",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "instant magic",
+        "article": "der",
+        "german": "Spontanzauber",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "artifact",
+        "article": "das",
+        "german": "Artefakt",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "artifact creature",
+        "article": "die",
+        "german": "Artefaktkreatur",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "land / country",
+        "article": "das",
+        "german": "Land",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "planeswalker",
+        "article": "der",
+        "german": "Planeswalker",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "battle",
+        "article": "die",
+        "german": "Schlacht",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "aura",
+        "article": "die",
+        "german": "Aura",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "equipment",
+        "article": "die",
+        "german": "Ausrüstung",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "saga",
+        "article": "die",
+        "german": "Saga",
+        "categories": [
+          "MTG"
+        ]
       }
     ],
     "verbs": [
       {
         "english": "to let",
         "german": "lassen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to go",
         "german": "gehen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to be",
         "german": "sein",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to drive, to ride, to go by vehicle",
         "german": "fahren",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to become, will",
         "german": "werden",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to speak",
         "german": "sprechen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to come",
         "german": "kommen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to want",
         "german": "wollen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to eat",
         "german": "essen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to forget",
         "german": "vergessen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to break",
         "german": "brechen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to help",
         "german": "helfen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to sleep",
         "german": "schlafen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to see",
         "german": "sehen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to learn",
         "german": "lernen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to stay, to remain",
         "german": "bleiben",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to find",
         "german": "finden",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to drink",
         "german": "trinken",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to understand",
         "german": "verstehen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to love",
         "german": "lieben",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to wait",
         "german": "warten",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to believe, to think",
         "german": "glauben",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to say, to tell",
         "german": "sagen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to live",
         "german": "leben",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to work",
         "german": "arbeiten",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to make, to do",
         "german": "machen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to fly",
         "german": "fliegen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to need",
         "german": "brauchen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to fly",
         "german": "fliegen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to be able to, can",
         "german": "können",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to be allowed to, may",
         "german": "dürfen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to want, would like",
         "german": "möchten",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to have to, must",
         "german": "müssen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "should",
         "german": "sollen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to want",
         "german": "wollen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to get, to receive",
         "german": "bekommen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to smoke",
         "german": "rauchen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to sing",
         "german": "singen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to buy",
         "german": "kaufen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to know (someone)",
         "german": "kennen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to swim",
         "german": "schwimmen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to visit, to attend",
         "german": "besuchen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to rain",
         "german": "regnen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to travel",
         "german": "reisen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to happen",
         "german": "passieren",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to ask, to question",
         "german": "fragen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to teach",
         "german": "lehren",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to start, to begin",
         "german": "beginnen",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to write",
         "german": "schreiben",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
       },
       {
         "english": "to have",
         "german": "haben",
-        "categories": ["General"]
+        "categories": [
+          "General"
+        ]
+      },
+      {
+        "english": "to cause",
+        "german": "verursachen",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to trample",
+        "german": "trampeln",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to flash",
+        "german": "blitzen / aufblitzen",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to apply / to use",
+        "german": "anwenden",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to fight",
+        "german": "kämpfen",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to fight",
+        "german": "kämpfen",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to tap",
+        "german": "tappen",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to attack",
+        "german": "angreifen",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to receive",
+        "german": "erhalten",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to destroy",
+        "german": "zerostoren",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to end / to finish",
+        "german": "beenden",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to sacrifice",
+        "german": "opfern",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to send",
+        "german": "schicken",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to pull / to draw",
+        "german": "ziehen",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to block",
+        "german": "blocken",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to take effect / to make an impression / to cast a magic card",
+        "german": "wirken",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to control",
+        "german": "kontrollieren",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to create",
+        "german": "erzeuge",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to throw off, discard (MTG)",
+        "german": "abwerfen",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to lose",
+        "german": "verlieren",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to copy",
+        "german": "kopieren",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to cost",
+        "german": "kosten",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to die",
+        "german": "sterben",
+        "categories": [
+          "General",
+          "MTG"
+        ]
+      },
+      {
+        "english": "to neutralize, to counter",
+        "german": "neutralisieren",
+        "categories": [
+          "MTG"
+        ]
+      }
+    ],
+    "adjectives": [
+      {
+        "english": "legendary",
+        "german": "legendär",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "flying",
+        "german": "fliegend",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "vigilant",
+        "german": "wachsam",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "hexproof",
+        "german": "fluchsicherheit",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "indestructible",
+        "german": "unzerstörbar",
+        "categories": [
+          "MTG"
+        ]
+      },
+      {
+        "english": "black",
+        "german": "schwarz",
+        "categories": [
+          "MTG",
+          "Colors"
+        ]
+      },
+      {
+        "english": "white",
+        "german": "weiß",
+        "categories": [
+          "MTG",
+          "Colors"
+        ]
+      },
+      {
+        "english": "blue",
+        "german": "blau",
+        "categories": [
+          "MTG",
+          "Colors"
+        ]
+      },
+      {
+        "english": "red",
+        "german": "rot",
+        "categories": [
+          "MTG",
+          "Colors"
+        ]
+      },
+      {
+        "english": "green",
+        "german": "grün",
+        "categories": [
+          "MTG",
+          "Colors"
+        ]
+      },
+      {
+        "english": "fewer",
+        "german": "weniger",
+        "categories": [
+          "MTG",
+          "General"
+        ]
+      },
+      {
+        "english": "more",
+        "german": "mehr",
+        "categories": [
+          "MTG",
+          "General"
+        ]
+      },
+      {
+        "english": "each",
+        "german": "jeden",
+        "categories": [
+          "MTG",
+          "General"
+        ]
+      },
+      {
+        "english": "new",
+        "german": "neu",
+        "categories": [
+          "MTG",
+          "General"
+        ]
+      },
+      {
+        "english": "any",
+        "german": "beliebig",
+        "categories": [
+          "MTG",
+          "General"
+        ]
       }
     ]
   }

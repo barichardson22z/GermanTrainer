@@ -29,8 +29,8 @@ class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
     var typeFiltersExpanded by mutableStateOf(false)
         private set
 
-    var types: SnapshotStateList<String> = mutableStateListOf("Noun", "Verb")
-    var selectedTypes: SnapshotStateList<String> = mutableStateListOf("Noun", "Verb")
+    var types: SnapshotStateList<String> = mutableStateListOf("Noun", "Verb", "Adjective")
+    var selectedTypes: SnapshotStateList<String> = mutableStateListOf("Noun", "Verb", "Adjective")
 
 
     var words: SnapshotStateList<IWord> = mutableStateListOf()
@@ -67,6 +67,8 @@ class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
 
         })
 
+        // Future: See if we can make words all one list in the firebase JSON and deserialize
+        // based on inferred or explicit Word sub-class
         val vocabNounsQuery = database.child("vocab").child("nouns")
         vocabNounsQuery.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -102,6 +104,24 @@ class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
             }
 
         })
+
+        val vocabAdjectivesQuery = database.child("vocab").child("adjectives")
+        vocabAdjectivesQuery.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                @Suppress("UNCHECKED_CAST")
+                val adjArrayList = snapshot.getValue<ArrayList<Adjective>>()
+                if (adjArrayList != null) {
+                    for (adj in adjArrayList) {
+                        words.add(adj)
+                    }
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.e("VocabViewModel", error.toString())
+            }
+
+        })
     }
 
     class Factory(private val speechProvider: ISpeechProvider) : ViewModelProvider.Factory {
@@ -121,9 +141,13 @@ class VocabViewModel(val speech: ISpeechProvider) : ViewModel() {
     fun nextWord() {
         germanWordShown = false
 
-        var filteredWords =
+        val filteredWords =
             words.filter { word -> word.categories.any { cat -> selectedCategories.contains(cat) } }
-                .filter { word -> (selectedTypes.contains("Noun") && word is Noun) || (selectedTypes.contains("Verb") && word is Verb) }
+                .filter { word ->
+                    selectedTypes.contains("Noun") && word is Noun
+                            || selectedTypes.contains("Verb") && word is Verb
+                            || selectedTypes.contains("Adjective") && word is Adjective
+                }
 
         val currentWord =
             if (filteredWords.isNotEmpty()) filteredWords[Random.nextInt(filteredWords.size)] else null
